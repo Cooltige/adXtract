@@ -20,11 +20,11 @@ echo '[-] Working dir: ' $CWD
 mkdir $CWD'/projects_'$PROJECT
 mkdir $CWD'/projects_'$PROJECT'/Maps'
 
-cd resources/libesedb-20160622/esedbtools
+#cd resources/libesedb-20160622/esedbtools
 
 echo '[-] Extracting tables'
-./esedbexport -t $CWD/projects_$PROJECT/$PROJECT $NTDS > $CWD/projects_$PROJECT/exported.log
-
+#./esedbexport -t $CWD/projects_$PROJECT/$PROJECT $NTDS > $CWD/projects_$PROJECT/exported.log
+esedbexport -t $CWD/projects_$PROJECT/$PROJECT $NTDS > $CWD/projects_$PROJECT/exported.log
 cd $CWD 
 echo "[-] Moved to dir: "$CWD
 
